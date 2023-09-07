@@ -1,0 +1,8 @@
+.footer {
+  &__body {
+    span[class^="material"] {
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Saira+Extra+Condensed:wght@300&family=Shrikhand&display=swap");
+// Material Icons
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+// Bootstrap
+// 客製說明 https://getbootstrap.com/docs/5.2/customize/sass/
+
+// 1. 匯入 functions (按照這個順序，後面可以啟動 manipulate colors, SVGs, calc 等功能)
+@import "../../node_modules/bootstrap/scss/functions"; // !勿刪
+
+// 2. 匯入欲覆蓋既有變數的自訂變數 (修改原有變數的 scss)
+@import './utils/variables'; // 自定義變數
+@import './utils/font'; //字體
+@import './utils/custom-colors'; //色系
+@import './utils/animation'; //animation
+
+// 3. 匯入運作 Bootstrap 必須的檔案
+@import "../../node_modules/bootstrap/scss/maps"; // !勿刪
+@import "../../node_modules/bootstrap/scss/mixins"; // !勿刪
+@import "../../node_modules/bootstrap/scss/root"; // !勿刪
+
+// 4. (選用) 匯入 Bootstrap 通用類別
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// 5. (選用) 匯入 Bootstrap 組件 (如果不使用元件，請將其註解)
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/accordion";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/spinners";
+@import "../../node_modules/bootstrap/scss/offcanvas";
+@import "../../node_modules/bootstrap/scss/placeholders";
+// Helpers
+@import "../../node_modules/bootstrap/scss/helpers";
+
+// 6. (選用) 載入API (將通用類別 _utilities.scss 實作產生css樣式的設置)
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+
+// 自定義樣式
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+
+@import "../../node_modules/bootstrap";

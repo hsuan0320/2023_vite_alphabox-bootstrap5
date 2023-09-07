@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>首頁｜AI虛擬陪伴</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main>
+      <section class="hero text-white">
+        <div class="container-fluid">
+          <div class="hero__top">
+            <div class="row justify-content-between">
+              <div class="col-md-3 d-none d-lg-flex flex-lg-column justify-content-lg-end">
+                <a href="#" class="link-light font-noto-sans pb-lg-2 mb-lg-9 border-bottom">
+                  最新消息！新版本 v15.4 釋出，搶先體驗！
+                </a>
+              </div>
+              <div class="col-md-6 text-center">
+                <img class="hero__topImg mx-auto animation_rotate360" src="../assets/images/circle.png"
+                  alt="Circle Logo Image" width="196px" height="196px">
+              </div>
+              <div class="col-md-3 d-flex flex-column justify-content-between order-first order-lg-last">
+                <p class="pt-2 mt-9 border-top">ALPHABOX+ STUDIO</p>
+                <p class="d-none d-md-block font-noto-sans mb-lg-9 hero__copyright">
+                  Copyright © 2023 Hexschool.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__body">
+            <div class="row align-items-end g-5">
+              <div class="col-lg-3">
+                <div class="hero__text mb-10 d-lg-none">
+                  <div class="hero__title">
+                    <span>A</span>
+                    <span>L</span>
+                    <span>P</span>
+                    <span>H</span>
+                    <span>A</span>
+                    <span>B</span>
+                    <span>O</span>
+                    <span>X</span>
+                    <span>+</span>
+                  </div>
+                  <p class="font-noto-sans">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+                </div>
+                <div class="position-relative">
+                  <picture>
+                    <source media="(min-width: 992px)" srcset="../assets/images/diane.png">
+                    <img class="hero__img img-fluid" src="../assets/images/diane_square1.png" alt="Responsive Image">
+                  </picture>
+                  <p class="h2 position-absolute top-0 start-50 translate-middle-x mt-5">
+                    Diane
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center">
+                <div class="hero__text d-none d-lg-block mb-lg-8">
+                  <div class="hero__title">
+                    <span>A</span>
+                    <span>L</span>
+                    <span>P</span>
+                    <span>H</span>
+                    <span>A</span>
+                    <span>B</span>
+                    <span>O</span>
+                    <span>X</span>
+                    <span>+</span>
+                  </div>
+                  <p class="font-noto-sans">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="position-relative">
+                      <picture>
+                        <source media="(min-width: 992px)" srcset="../assets/images/felix.png">
+                        <img class="hero__img img-fluid" src="../assets/images/felix_square1.png"
+                          alt="Responsive Image">
+                      </picture>
+                      <p class="h2 position-absolute top-0 start-50 translate-middle-x mt-5">
+                        Felix
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="position-relative">
+                      <picture>
+                        <source media="(min-width: 992px)" srcset="../assets/images/karina.png">
+                        <img class="hero__img img-fluid" src="../assets/images/karina_square1.png"
+                          alt="Responsive Image">
+                      </picture>
+                      <p class="h2 position-absolute top-0 start-50 translate-middle-x mt-5">
+                        Karina
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="position-relative">
+                  <picture>
+                    <source media="(min-width: 992px)" srcset="../assets/images/vito.png">
+                    <img class="hero__img img-fluid" src="../assets/images/vito_square1.png" alt="Responsive Image">
+                  </picture>
+                  <p class="h2 position-absolute top-0 start-50 translate-middle-x mt-5">
+                    Vito
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

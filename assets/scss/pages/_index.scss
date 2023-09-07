@@ -1,0 +1,50 @@
+.hero {
+  background-image: url(/assets/images/home_background.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &__topImg {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+  }
+
+  &__img {
+    transition: box-shadow .25s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 16px 8px #8F00FFCC;
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-size: 1.25rem;
+      font-style: italic;
+    }
+
+    p {
+      letter-spacing: 5px;
+    }
+  }
+
+  &__copyright {
+    color: $primary-200;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__title {
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+}
