@@ -12,7 +12,7 @@
   <%- include('./layout/header'); -%>
     <main>
       <section class="hero text-white">
-        <div class="container-fluid">
+        <div class="container-fluid col-xxl-11">
           <div class="hero__top">
             <div class="row justify-content-between">
               <div class="col-md-3 d-none d-lg-flex flex-lg-column justify-content-lg-end">
@@ -115,6 +115,128 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="about text-white">
+        <div class="about__top border-bottom border-white">
+          <div class="container-fluid col-xxl-11">
+            <h2
+              class="about__title font-noto-sans fw-bold spacing-base pt-5 pt-lg-2 pb-7 pb-lg-5 mt-10 mt-lg-12 linear-border--top">
+              什麼是<br>
+              ALPHABOX+
+            </h2>
+          </div>
+        </div>
+        <div class="about__body pb-15 pb-lg-14">
+          <div class="container-fluid col-xxl-11 linear-border--bottom pb-10 linear-border--bottom">
+            <div class="row align-items-center justify-content-between g-0">
+              <!--  左箭頭  -->
+              <div class="col-1 d-none d-md-block">
+                <div class="swiper-button-prev">
+                  <img src="../assets/images/carousel/line_start_arrow_notch.png" alt="left arrow" class="img-fluid">
+                </div>
+              </div>
+              <!--  Swiper  -->
+              <div class="col-md-9 mt-3">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div
+                        class="slide d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                        <div class="slide__intro">
+                          <h3 class="lh-base text-md-end mb-3">
+                            <span class="font-Shrikhand slide__index">01</span><br>
+                            <span class="slide__title">立體投影技術</span>
+                          </h3>
+                          <p class="mb-0">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="slide d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                        <div class="slide__intro">
+                          <h3 class="lh-base text-md-end mb-3">
+                            <span class="font-Shrikhand slide__index">02</span><br>
+                            <span class="slide__title">立體投影技術</span>
+                          </h3>
+                          <p class="mb-0">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  右箭頭  -->
+              <div class="col-1 d-none d-md-block">
+                <div class="swiper-button-next">
+                  <img src="../assets/images/carousel/line_end_arrow_notch.png" alt="right arrow" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news text-white py-15">
+        <div class="container">
+          <h2 class="news__title fw-bold spacing-base text-center text-lg-start mb-10 mb-lg-12">最新消息</h2>
+          <div class="row gx-0 font-noto-sans">
+            <div class="col-12 border-top border-bottom border-white">
+              <div class="news__item px-4 py-8 py-lg-10">
+                <p class="d-flex align-items-center mb-3">
+                  <span class="material-symbols-outlined me-6">emergency</span><time
+                    class="fw-bold spacing-base">2023.06.30</time>
+                </p>
+                <h4 class="news__subject spacing-base fs-20 fw-bold mb-3">產品升級公告</h4>
+                <div class="d-flex flex-column flex-xl-row justify-content-xl-between">
+                  <p class="fw-bold mb-3 mb-xl-0">
+                    榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。<br class="d-none d-xl-block">
+                    歡迎您了解本次升級帶來的更為卓越的性能！
+                  </p>
+                  <a href="#">
+                    <img src="../assets/images/line_end_arrow_notch.png" alt="right arrow">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 border-bottom border-lg-end border-white">
+              <div class="news__item px-4 py-8 py-lg-10">
+                <p class="d-flex align-items-center mb-3">
+                  <span class="material-symbols-outlined me-6">emergency</span><time
+                    class="fw-bold spacing-base">2023.06.30</time>
+                </p>
+                <h4 class="news__subject spacing-base fs-20 fw-bold mb-3">限時優惠活動</h4>
+                <p class="fw-bold mb-3">
+                  為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！
+                </p>
+                <a href="#">
+                  <img src="../assets/images/line_end_arrow_notch_short.png" alt="right arrow">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 border-bottom border-white">
+              <div class="news__item px-4 py-8 py-lg-10">
+                <p class="d-flex align-items-center mb-3">
+                  <span class="material-symbols-outlined me-6">emergency</span><time
+                    class="fw-bold spacing-base">2023.04.18</time>
+                </p>
+                <h4 class="news__subject spacing-base fs-20 fw-bold mb-3">新功能上線</h4>
+                <p class="fw-bold mb-3">
+                  為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。
+                </p>
+                <a href="#">
+                  <img src="../assets/images/line_end_arrow_notch_short.png" alt="right arrow">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-12 my-lg-14">
+            <a href="#" class="d-inline-block">
+              <img src="../assets/images/read_more.png" alt="read more" class="img-fluid">
+            </a>
+          </div>
+          <p class="fw-bold text-white text-end d-none d-lg-block pt-lg-12">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
         </div>
       </section>
     </main>

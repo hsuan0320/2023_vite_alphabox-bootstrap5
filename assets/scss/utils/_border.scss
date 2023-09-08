@@ -1,0 +1,18 @@
+@include media-breakpoint-up(lg) {
+    .border-lg-end {
+        border-right: $border-width $border-style $border-color;
+    }
+}
+
+.linear-border--top {
+    /* 使用漸變定義上邊框 */
+    border-top: 40px solid transparent;
+    border-image: linear-gradient(to right, #7000FF, #11002D) 1;
+    border-image-slice: 1;
+}
+
+.linear-border--bottom {
+    border-bottom: 40px solid transparent;
+    border-image: linear-gradient(to right, #11002D, #7000FF) 1;
+    border-image-slice: 1;
+}

@@ -60,6 +60,11 @@
     font-size: 8rem
 }
 
+// letter spacing
+.spacing-base {
+    letter-spacing: 1em;
+}
+
 /* 選取所有 class 屬性開頭為 material 的元素 */
 span[class^="material"] {
     &.md-18 {

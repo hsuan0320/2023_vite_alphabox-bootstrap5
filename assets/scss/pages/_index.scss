@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  margin-bottom: -104px;
 
   &__topImg {
     margin-top: 2rem;
@@ -46,5 +47,90 @@
         font-size: 2rem;
       }
     }
+  }
+}
+
+.about {
+  // 使用自定義放射狀漸變 mixin，並傳遞顏色值作為參數
+  @include radial-gradient(#300871, #000); // 傳遞起始色和結束色作為參數
+  background-image: url(/assets/images/carousel_background_m.png), radial-gradient(#300871, #000); // 使用 mixin 並傳遞顏色值
+  background-repeat: no-repeat;
+  padding-top: 104px;
+
+  &__title {
+    font-size: 1.5rem;
+
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-image: url(/assets/images/carousel_background.png), radial-gradient(#300871, #000); // 使用 mixin 並傳遞顏色值
+    background-size: 50% 100%, 100%; // 圖像的寬度為元素寬度的50%，高度為元素高度的100% (圖像的高度將充滿整個元素，但寬度只占一半)
+
+  }
+}
+
+
+.news {
+  @include radial-gradient(#28085C, #000);
+
+  &__title {
+    font-size: 2.5rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__list {
+      border-right: 1px solid #fff;
+    }
+  }
+}
+
+
+.slide {
+  height: 351px;
+  background-image: url(https://hackmd.io/_uploads/Syn6HV7Tn.png);
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+
+  @include media-breakpoint-up(xxl) {
+    height: 560px;
+    padding-right: 40px;
+  }
+
+  &__title {
+    letter-spacing: 24px;
+
+    @include media-breakpoint-up(lg) {
+      letter-spacing: 32px;
+      margin-right: -32px;
+    }
+  }
+
+  &__index {
+    font-size: 96px;
+  }
+}
+
+
+
+// 箭頭
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  position: initial;
+  margin-top: 0;
+  width: auto;
+  height: auto;
+
+  &::after {
+    content: '';
   }
 }

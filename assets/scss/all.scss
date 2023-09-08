@@ -11,9 +11,7 @@
 
 // 2. 匯入欲覆蓋既有變數的自訂變數 (修改原有變數的 scss)
 @import './utils/variables'; // 自定義變數
-@import './utils/font'; //字體
-@import './utils/custom-colors'; //色系
-@import './utils/animation'; //animation
+
 
 // 3. 匯入運作 Bootstrap 必須的檔案
 @import "../../node_modules/bootstrap/scss/maps"; // !勿刪
@@ -62,10 +60,14 @@
 
 
 // 自定義樣式
+@import './utils/font'; //字體
+@import './utils/custom-colors'; //色系
+@import './utils/animation'; //animation
+@import './utils/border';
+
+@import './mixins/bg-gradient'; //漸層
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
-
 @import './pages/index.scss';
-
-@import "../../node_modules/bootstrap";
