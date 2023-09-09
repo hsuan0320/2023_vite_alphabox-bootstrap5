@@ -1,0 +1,30 @@
+.faq {
+    background-color: $primary-100;
+
+    &__title {
+        font-size: 2.5rem;
+    }
+
+    &__body {
+        border-top: 2px dotted #fff;
+
+        .nav-link.active {
+            border-bottom: 1px solid #000;
+        }
+    }
+
+
+    @include media-breakpoint-up(lg) {
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__body {
+            .nav-link.active {
+                border-bottom: 0;
+            }
+        }
+    }
+
+
+}

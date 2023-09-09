@@ -60,6 +60,8 @@
 
 
 // 自定義樣式
+@import './base/reset';
+@import './base/typography';
 @import './utils/font'; //字體
 @import './utils/custom-colors'; //色系
 @import './utils/animation'; //animation
@@ -67,7 +69,10 @@
 
 @import './mixins/bg-gradient'; //漸層
 
+@import './components/accordion';
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
+@import './pages/faq.scss';

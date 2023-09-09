@@ -393,7 +393,7 @@ $spacers: (
   10: $spacer * 2,
   // 32px
   11: $spacer * 2.25,
-  // 36mx
+  // 36px
   12: $spacer * 2.5,
   // 40px
   13: $spacer * 3,
@@ -402,8 +402,16 @@ $spacers: (
   // 52px
   15: $spacer * 3.75,
   // 60px
-
-  // ...
+  16: $spacer * 4,
+  // 64px
+  17: $spacer * 4.25,
+  //68px
+  18: $spacer * 4.5,
+  //72px
+  19: $spacer * 4.75,
+  //76px
+  20: $spacer * 5,
+  // 80px
   ) !default; // *custom
 // scss-docs-end spacer-variables-maps
 
@@ -774,7 +782,8 @@ $input-btn-focus-width: .25rem !default;
 $input-btn-focus-color-opacity: .25 !default;
 $input-btn-focus-color: rgba($component-active-bg, $input-btn-focus-color-opacity) !default;
 $input-btn-focus-blur: 0 !default;
-$input-btn-focus-box-shadow: 0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
+// $input-btn-focus-box-shadow: 0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
+$input-btn-focus-box-shadow: 0 !default; // *custom
 
 $input-btn-padding-y-sm: .25rem !default;
 $input-btn-padding-x-sm: .5rem !default;
@@ -1317,23 +1326,32 @@ $card-group-margin: $grid-gutter-width * .5 !default;
 $accordion-padding-y: 1rem !default;
 $accordion-padding-x: 1.25rem !default;
 $accordion-color: $body-color !default; // Sass variable because of $accordion-button-icon
-$accordion-bg: $body-bg !default;
+// $accordion-bg: $body-bg !default;
+$accordion-bg: transparent !default; // *custom
+
 $accordion-border-width: $border-width !default;
 $accordion-border-color: var(--#{$prefix}border-color) !default;
 $accordion-border-radius: $border-radius !default;
 $accordion-inner-border-radius: subtract($accordion-border-radius, $accordion-border-width) !default;
 
 $accordion-body-padding-y: $accordion-padding-y !default;
-$accordion-body-padding-x: $accordion-padding-x !default;
+// $accordion-body-padding-x: $accordion-padding-x !default;
+$accordion-body-padding-x: 0 !default; // *custom
 
-$accordion-button-padding-y: $accordion-padding-y !default;
-$accordion-button-padding-x: $accordion-padding-x !default;
+// $accordion-button-padding-y: $accordion-padding-y !default;
+$accordion-button-padding-y: 0 !default; // *custom
+
+// $accordion-button-padding-x: $accordion-padding-x !default;
+$accordion-button-padding-x: 0 !default; // *custom
+
 $accordion-button-color: $accordion-color !default;
 $accordion-button-bg: var(--#{$prefix}accordion-bg) !default;
 $accordion-transition: $btn-transition,
   border-radius .15s ease !default;
-$accordion-button-active-bg: tint-color($component-active-bg, 90%) !default;
-$accordion-button-active-color: shade-color($primary, 10%) !default;
+// $accordion-button-active-bg: tint-color($component-active-bg, 90%) !default;
+// $accordion-button-active-color: shade-color($primary, 10%) !default;
+$accordion-button-active-bg: transparent !default; // *custom
+$accordion-button-active-color: $black !default; // *custom
 
 $accordion-button-focus-border-color: $input-focus-border-color !default;
 $accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;

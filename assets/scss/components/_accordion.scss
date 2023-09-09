@@ -1,0 +1,23 @@
+   /* 將預設的::after內容刪除 */
+   .accordion-button::after {
+       font-family: 'Material Icons';
+       content: "";
+       font-weight: bold;
+       font-size: 2rem;
+       width: 40px;
+       height: 40px;
+   }
+
+   .accordion-button::after,
+   .accordion-button:not(.collapsed)::after {
+       background-image: none;
+
+   }
+
+   .accordion-button.collapsed::after {
+       content: 'add';
+   }
+
+   .accordion-button:not(.collapsed)::after {
+       content: 'remove';
+   }

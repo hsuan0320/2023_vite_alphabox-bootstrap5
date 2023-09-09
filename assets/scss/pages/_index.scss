@@ -8,19 +8,15 @@
   &__topImg {
     margin-top: 2rem;
     margin-bottom: 2rem;
-
   }
 
   &__img {
     transition: box-shadow .25s ease-in-out;
 
     &:hover {
+      cursor: pointer;
       box-shadow: 0 0 16px 8px #8F00FFCC;
     }
-  }
-
-  &__text {
-    text-align: center;
   }
 
   &__title {
@@ -52,8 +48,8 @@
 
 .about {
   // 使用自定義放射狀漸變 mixin，並傳遞顏色值作為參數
-  @include radial-gradient(#300871, #000); // 傳遞起始色和結束色作為參數
-  background-image: url(/assets/images/carousel_background_m.png), radial-gradient(#300871, #000); // 使用 mixin 並傳遞顏色值
+  @include radial-gradient(#300871, $black); // 傳遞起始色和結束色作為參數
+  background-image: url(/assets/images/carousel_background_m.png), radial-gradient(#300871, $black); // 使用 mixin 並傳遞顏色值
   background-repeat: no-repeat;
   padding-top: 104px;
 
@@ -66,16 +62,28 @@
     }
   }
 
-  @include media-breakpoint-up(lg) {
-    background-image: url(/assets/images/carousel_background.png), radial-gradient(#300871, #000); // 使用 mixin 並傳遞顏色值
-    background-size: 50% 100%, 100%; // 圖像的寬度為元素寬度的50%，高度為元素高度的100% (圖像的高度將充滿整個元素，但寬度只占一半)
+  // 箭頭
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $white;
+    position: initial;
+    margin-top: 0;
+    width: auto;
+    height: auto;
 
+    &::after {
+      content: '';
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-image: url(/assets/images/carousel_background.png), radial-gradient(#300871, $black); // 使用 mixin 並傳遞顏色值
+    background-size: 50% 100%, 100%; // 圖像的寬度為元素寬度的50%，高度為元素高度的100% (圖像的高度將充滿整個元素，但寬度只占一半)
   }
 }
 
-
 .news {
-  @include radial-gradient(#28085C, #000);
+  @include radial-gradient($primary-600, $black);
 
   &__title {
     font-size: 2.5rem;
@@ -87,11 +95,10 @@
     }
 
     &__list {
-      border-right: 1px solid #fff;
+      border-right: 1px solid $white;
     }
   }
 }
-
 
 .slide {
   height: 351px;
@@ -119,18 +126,111 @@
   }
 }
 
+.share {
+  position: relative;
 
+  &::before {
+    position: absolute;
+    bottom: -68px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "ALPHABOX+";
+    font-size: 128px;
+    font-weight: 400;
+    color: #FFFFFF0A;
+  }
 
-// 箭頭
-.swiper-button-next,
-.swiper-button-prev {
-  color: #fff;
-  position: initial;
-  margin-top: 0;
-  width: auto;
-  height: auto;
+  // 使用自定義放射狀漸變 mixin，並傳遞顏色值作為參數
+  @include radial-gradient($black, $primary-600);
 
-  &::after {
-    content: '';
+  &__title {
+    font-size: 2.5rem;
+  }
+
+  &__card {
+    padding: 40px;
+    background-color: $primary-500;
+    color: $white;
+    min-height: 351px;
+  }
+
+  .share__swiper {
+    .swiper-wrapper {
+      margin-bottom: 0;
+      height: 416px;
+    }
+  }
+
+  .swiper-scrollbar {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .swiper-scrollbar-drag {
+    background: $white !important;
+  }
+
+  .share-scroll {
+    margin-bottom: 124px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &::before {
+      bottom: -240px;
+      font-size: 128px;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}
+
+.contact {
+  &__title {
+    font-size: 2.5rem;
+  }
+
+  background-color: $primary-700;
+
+  @include media-breakpoint-up(lg) {
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}
+
+.intro {
+  &__card {
+    background-color: #00000080;
+    transition: 0.5s;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+
+  .number {
+    font-size: 128px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__card {
+      background-color: #000;
+
+      &:hover {
+        background-color: #00000080;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .number {
+      font-size: 200px;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    .number {
+      font-size: 400px;
+      line-height: 1.1;
+    }
   }
 }

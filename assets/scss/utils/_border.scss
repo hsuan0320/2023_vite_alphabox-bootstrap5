@@ -16,3 +16,11 @@
     border-image: linear-gradient(to right, #11002D, #7000FF) 1;
     border-image-slice: 1;
 }
+
+.border-dotted--top {
+    border-top: 2px dotted #fff;
+}
+
+.border-dotted--bottom {
+    border-bottom: 2px dotted #fff;
+}
